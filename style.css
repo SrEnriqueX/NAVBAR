@@ -1,0 +1,81 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background: linear-gradient(25deg, #8600b3 50%, #cc33ff 50%);
+
+}
+h1{
+    position: absolute;
+    top:30%;
+    font-size: 60px;
+    color: white;
+}*/
+.box{
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.box > i{
+    font-size: 20px;
+    color: #777;
+}
+
+.box >input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+:root {
+    --navbar-color: #00A3FF;
+    --linksText-color: #FAFAFA;
+    --linksText-hover: #ddd;
+}
+
+.custom-navbar {
+    background-color: var(--navbar-color); /* Color personalizado de la navbar */
+}
+
+.custom-navbar .navbar-brand, 
+.custom-navbar .nav-link {
+    color: var(--linksText-color);  /* Color blanco para los enlaces y la marca */
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--linksText-hover);  /* Color de hover más claro para los enlaces */
+}
+#menu{
+    text-align: center;
+}
+
+.navbar-nav {
+    display: inline-block; /* Permite centrar la lista de navegación */
+}
+
+.offcanvas {
+    background-color: var(--navbar-color); /* Color de fondo personalizado */
+    color: var(--linksText-color); /* Color de texto para asegurarte de que el texto sea legible */
+}
+
+
+.offcanvas.offcanvas-top {
+    height: 100%; 
+}
+
