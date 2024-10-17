@@ -9,7 +9,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-<h1>HOLA</h1>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+
+            <!-- Enlaces estáticos en el navbar -->
+            <div class="d-flex align-items-center mx-auto w-100" style="flex-wrap: nowrap;">
+                            <!-- Logotipo -->
+            <a class="navbar-brand" href="#">
+                <img src="pngtree-cleaning-service-bucket-sweep-business-logo-design-template-png-image_5101190-removebg-preview.png" alt="logotipo" height="50">
+            </a>
+    
+                <ul class="navbar-nav d-flex flex-row justify-content-between align-items-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-house-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text" class="form-control me-2" placeholder="Buscar" style="width: 150px;">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-whatsapp"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i></a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+    
+            <!-- Botón para offcanvas -->
+
+        </div>
+    </nav>
+    
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="menu" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5 class="text-center">CATEGORÍA</h5>
+            <ul class="navbar-nav fs-4 d-flex justify-content-center w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>Limpieza Personal</strong></a>
+                    <a class="nav-link" href="#"><strong>Limpieza Domestica</strong></a>
+                    <a class="nav-link" href="#"><strong>Limpieza Industrial</strong></a>
+                    <a class="nav-link" href="#"><strong>Accesorios</strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
