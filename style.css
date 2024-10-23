@@ -1,5 +1,3 @@
-
-
 :root {
     --navbar-color: #00A3FF;
     --linksText-color: #FAFAFA;
@@ -18,19 +16,15 @@
 .custom-navbar .nav-link:hover {
     color: var(--linksText-hover);  /* Color de hover más claro para los enlaces */
 }
-#menu{
-    text-align: center;
-}
 
-.navbar-nav {
-    display: inline-block; /* Permite centrar la lista de navegación */
+#menu {
+    text-align: center;
 }
 
 .offcanvas {
     background-color: var(--navbar-color); /* Color de fondo personalizado */
     color: var(--linksText-color); /* Color de texto para asegurarte de que el texto sea legible */
 }
-
 
 .offcanvas.offcanvas-top {
     height: 100%; 
@@ -40,48 +34,60 @@
     border-radius: 20px; /* Ajusta el valor según tus preferencias */
 }
 
+.navbar-nav {
+    display: inline-block;
+    justify-content: center; /* Centra los elementos en el contenedor */
+    align-items: center;
+    width: 100%;
+}
 
+.search-bar {
+    width: 50%;
+    transition: display 0.3s ease;
+}
 
-
+.nav-item {
+    margin: 0 10px; /* Ajusta el margen entre los íconos */
+}
 
 .form-control {
     background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/search.svg');
     background-position: 5px center;
     background-repeat: no-repeat;
-    padding-left: 20px; /* Espacio suficiente para el icono */
-    background-size: 14px; /* Tamaño del icono */
+    padding-left: 25px; /* Espacio suficiente para el icono */
+    background-size: 16px; /* Tamaño del icono */
 }
 
+/* Estilos para el botón de toggler */
+.navbar-toggler {
+    border: none; /* Eliminar borde predeterminado */
+    background-color: transparent; /* Fondo transparente */
+    padding: 0; /* Quitar padding para que se alinee con los íconos */
+    margin: 0 5px; /* Espacio a los lados */
+}
 
-@media (max-width: 350px) {
-    .form-control {
-        background-image: none; /* Oculta el icono de búsqueda */
-        padding-left: 10px; /* Ajusta el padding cuando no esté el icono */
-        height: 1.2em; /* Ajusta la altura del input */
-        min-width: 60px !important;
-        font-size: 0.8em;
-    }
-    .navbar-toggler {
-        width: 1.2em; /* Reducimos el tamaño general del botón */
-        height: 1.2em;
-        padding: 0.2em; /* Reducimos el espacio interno */
-        margin: 0 auto; /* Centramos el botón */
-        border: 2px solid transparent; 
-        display: flex;
-        justify-content: center;
-        align-items: center;/* Reduces el borde o puedes cambiarlo */
-    }
+.navbar-toggler:focus {
+    outline: none; /* Eliminar el borde de enfoque */
+}
 
-    .navbar-toggler-icon {
-        width: 1em;  /* Ajustamos el tamaño del ícono */
-        height: 1em;
-        background-size: 80%;  /* Hacemos el ícono más pequeño */
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+}
+
+/* Ocultar el nuevo campo de búsqueda por defecto */
+.new-search-bar {
+    display: none; /* Por defecto, ocultar el nuevo campo de búsqueda */
+    width: 100%; /* Hacer que ocupe todo el ancho */
+    margin: 10px 0; /* Añadir margen si es necesario */
+}
+
+/* Mostrar el nuevo campo de búsqueda en pantallas pequeñas */
+@media (max-width: 600px) {
+    .search-bar {
+        display: none; /* Ocultar la barra de búsqueda original */
     }
-    /* Reducción del tamaño de los iconos en los enlaces de navegación */
-    .navbar-nav .nav-link i {
-        font-size: 0.8em !important;  /* Ajusta este valor según necesites el tamaño */
-        display: flex;
-        justify-content: center;
-        align-items: center;/* Reduces el borde o puedes cambiarlo */
+    .new-search-bar {
+        display: block; /* Mostrar el nuevo campo de búsqueda */
     }
 }
