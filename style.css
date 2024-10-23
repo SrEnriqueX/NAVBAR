@@ -81,6 +81,11 @@
     width: 100%; /* Hacer que ocupe todo el ancho */
     margin: 10px 0; /* Añadir margen si es necesario */
 }
+.navbar-toggler:focus {
+    outline: none; /* Eliminar el borde de enfoque */
+    box-shadow: none; /* Eliminar la sombra de enfoque */
+}
+
 
 /* Mostrar el nuevo campo de búsqueda en pantallas pequeñas */
 @media (max-width: 600px) {
