@@ -59,7 +59,7 @@
             </div>
         </nav>
         
-        
+        <!--desplegable boton hamburgesa-->
         <div class="offcanvas offcanvas-top" tabindex="-1" id="menu" aria-labelledby="offcanvasTopLabel">
             <div class="offcanvas-header justify-content-end">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -80,7 +80,7 @@
 
         <!--CARROSEL-->
         <div class="row my-5 mx-3">
-            <div class="owl-carousel owl-theme">
+            <div id="carousel-products" class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card border-0 shadow ">
                         <img src="https://m.media-amazon.com/images/I/61Lf3lWefWL._AC_UF1000,1000_QL80_.jpg" alt="imagen1" class="card-img-top">
@@ -137,6 +137,42 @@
                 <!--item ends-->
             </div>
         </div>
+
+
+        <!-- Nuevo bloque de categorías -->
+        <main class="container-fluid">
+            <!-- Categories -->
+            <div class="row text-center g-4 custom-navbar text-white">
+                <div id="carousel-categories" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="pagina1.html" class="category-item text-white text-decoration-none d-flex flex-column align-items-center">
+                            <img src="LimpiezaPersonal.png" alt="Categoría 1" class="fs-1" style="width: 50px; height: 50px;">
+                            <p class="mt-2">Limpieza Personal</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="pagina2.html" class="category-item text-white text-decoration-none d-flex flex-column align-items-center">
+                            <img src="LimpiezaDomestica.png" alt="Categoría 2" class="fs-1" style="width: 50px; height: 50px;">
+                            <p class="mt-2">Limpieza Domestica</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="pagina3.html" class="category-item text-white text-decoration-none d-flex flex-column align-items-center">
+                            <img src="LimpiezaIndustrial.png" alt="Categoría 3" class="fs-1" style="width: 50px; height: 50px;">
+                            <p class="mt-2">Limpieza Industrial</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="pagina4.html" class="category-item text-white text-decoration-none d-flex flex-column align-items-center">
+                            <img src="Accesorios.png" alt="Categoría 4" class="fs-1" style="width: 50px; height: 50px;">
+                            <p class="mt-2">Accesorios</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>        
+        
+
 
     </div>
 

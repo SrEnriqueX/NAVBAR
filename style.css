@@ -97,7 +97,7 @@
     }
 }
 
-
+/*Carrusel */
 .item img{
     height: 300px;
     width: 100%;
@@ -122,4 +122,19 @@
 }
 .card:hover .card-body{
     right: 0;
+}
+
+/*Carrusel categorias*/
+
+.category-item img,
+.category-item p {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.category-item:hover img {
+    transform: scale(1.1); 
+}
+
+.category-item:hover p {
+    color: #eeeeee;
 }
