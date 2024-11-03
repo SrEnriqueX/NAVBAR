@@ -1,11 +1,12 @@
 :root {
-    --navbar-color: #00A3FF;
+    --first-color: #00A3FF;
+    --first-color-hover: #0099E6;
     --linksText-color: #FAFAFA;
     --linksText-hover: #ddd;
 }
 
 .custom-navbar {
-    background-color: var(--navbar-color); /* Color personalizado de la navbar */
+    background-color: var(--first-color); /* Color personalizado de la navbar */
 }
 
 .custom-navbar .navbar-brand, 
@@ -22,7 +23,7 @@
 }
 
 .offcanvas {
-    background-color: var(--navbar-color); /* Color de fondo personalizado */
+    background-color: var(--first-color); /* Color de fondo personalizado */
     color: var(--linksText-color); /* Color de texto para asegurarte de que el texto sea legible */
 }
 
@@ -96,17 +97,16 @@
         display: block; /* Mostrar el nuevo campo de búsqueda */
     }
 }
-
-/*Carrusel */
-.item img{
-    height: 300px;
-    width: 100%;
+body{
+    background-color: #ffffffed;
 }
-.card{
+/*Carrusel */
+
+.card-container-limited{
     overflow: hidden;
     position: relative;
 }
-.card-body{
+.card-body-container{
     width: 100%;
     height: 100%;
     top: 0;
@@ -114,27 +114,61 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.336);
     backdrop-filter: blur(5px);   
-    color: #fff;
+    color: var(--linksText-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
-.card:hover .card-body{
+.card-container-limited:hover .card-body-container{
     right: 0;
 }
 
-/*Carrusel categorias*/
 
+
+/*Carrusel categorias*/
 .category-item img,
 .category-item p {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .category-item:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Aumenta un 10% el tamaño */
 }
 
 .category-item:hover p {
-    color: #eeeeee;
+    color: var(--linksText-hover); /* Cambia el color del texto al pasar el mouse */
+}
+.card-img-top{
+    width: 223px;
+    height: 223px;
+}
+
+/*Tarjeta de productos mas vendidos*/
+.new-card img {
+    padding: 10px;
+    width: 223px;
+    height: 223px;
+}
+.new-card {
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.new-card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.text-h2,.text-h5{
+    color: var(--first-color);
+}
+
+.custom-btn {
+    background-color: var(--first-color); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+}
+
+.custom-btn:hover {
+    background-color: #0080B3; /* Color de fondo en hover */
+    color: #fff; /* Color del texto en hover */
 }
