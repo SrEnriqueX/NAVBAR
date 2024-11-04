@@ -1,6 +1,6 @@
 :root {
     --first-color: #00A3FF;
-    --first-color-hover: #0099E6;
+    --first-color-hover: #00a2ffaf;
     --linksText-color: #FAFAFA;
     --linksText-hover: #ddd;
 }
@@ -172,3 +172,41 @@ body{
     background-color: #0080B3; /* Color de fondo en hover */
     color: #fff; /* Color del texto en hover */
 }
+
+/*Footer */
+footer {
+    background-color: white;
+    border-top: 1px solid #dee2e6;
+}
+
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+
+footer a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--first-color-hover);
+    text-decoration: none;
+}
+.footer-p,.footer-h3{
+    color: var(--first-color);
+}
+
+
+.social-icons a {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: var(--first-color-hover);
+}
+
